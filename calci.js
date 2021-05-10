@@ -17,7 +17,7 @@ function calculate(e){
     alert("Add required details")
   }
   
-  let nthTerm = firstTerm + n*commonDifference - commonDifference
+  let nthTerm = firstTerm.value + n.value*commonDifference.value - commonDifference.value
   console.log(nthTerm)
   console.log(firstTerm.value)
   console.log(n.value)
