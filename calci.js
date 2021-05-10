@@ -13,17 +13,17 @@ function loadEventListeners(){
 
 //calculate
 function calculate(e){
+  e.preventDefault();
   if(firstTerm.value === '' || commonDifference.value === '' || n.value === ''){
     alert("Add required details")
   }
-  
-  let nthTerm = firstTerm.value + n.value*commonDifference.value - commonDifference.value
-  console.log(nthTerm)
-  console.log(firstTerm.value)
-  console.log(n.value)
-  console.log(commonDifference.value)
-  return nthTerm;
+  let a = Number(firstTerm.value)
+  let d = Number(commonDifference.value);
+  let N = Number(n.value)
 
-  e.preventDefault();
+  let nthTerm = a+((N-1)*d)
+ console.log(nthTerm);
+
+
 }
-console.log(calculate)
+
